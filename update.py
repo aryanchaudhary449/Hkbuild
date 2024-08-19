@@ -6,6 +6,8 @@ from subprocess import run as srun, call as scall
 if ospath.exists('log.txt'):
     with open('log.txt', 'r+') as f:
         f.truncate(0)
+        
+
 
 if ospath.exists('rlog.txt'):
     remove('rlog.txt')
