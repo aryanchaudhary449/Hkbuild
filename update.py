@@ -2,15 +2,15 @@ from os import path as ospath, environ, remove
 from logging import FileHandler, StreamHandler, INFO, basicConfig, error as log_error, info as log_info
 #from loggig import FileHandler, StreamHandler, INFO, basicConfig, error as log_error, info as log_info
 from subprocess import run as srun, call as scall
-from bot.config import TG_CONFIG
+#from bot.config import TG_CONFIG
 if ospath.exists('log.txt'):
     with open('log.txt', 'r+') as f:
         f.truncate(0)
 
 if ospath.exists('rlog.txt'):
     remove('rlog.txt')
-UPSTREAM_REPO=TG_CONFIG.UPSTREAM_REPO
-UPSTREAM_BRANCH=TG_CONFIG.UPSTREAM_BRANCH
+UPSTREAM_REPO="https://github.com/triednow/testout4gb"
+UPSTREAM_BRANCH="Aryan"
 if UPSTREAM_REPO is not None:
     if ospath.exists('.git'):
         srun(["rm", "-rf", ".git"])
