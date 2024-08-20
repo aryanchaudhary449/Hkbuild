@@ -11,7 +11,7 @@ if ospath.exists('log.txt'):
 
 if ospath.exists('rlog.txt'):
     remove('rlog.txt')
-UPSTREAM_REPO="https://github.com/triednow/testout4gb"
+UPSTREAM_REPO="repo do"
 UPSTREAM_BRANCH="Aryan"
 if UPSTREAM_REPO is not None:
     if ospath.exists('.git'):
