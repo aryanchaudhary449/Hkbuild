@@ -11,15 +11,15 @@ if ospath.exists('log.txt'):
 
 if ospath.exists('rlog.txt'):
     remove('rlog.txt')
-UPSTREAM_REPO="repo do"
-UPSTREAM_BRANCH="Aryan"
+UPSTREAM_REPO="https://github.com/MAHESH-KADALI/testout4gb"
+UPSTREAM_BRANCH="dwebdl"
 if UPSTREAM_REPO is not None:
     if ospath.exists('.git'):
         srun(["rm", "-rf", ".git"])
 
     update = srun([f"git init -q \
-                     && git config --global user.email kipsas449@gmail.com \
-                     && git config --global user.name Aryan \
+                     && git config --global user.email pogodrawings@gmail.com \
+                     && git config --global user.name MAHESH \
                      && git add . \
                      && git commit -sm update -q \
                      && git remote add origin {UPSTREAM_REPO} \
