@@ -12,7 +12,7 @@ if ospath.exists('log.txt'):
 if ospath.exists('rlog.txt'):
     remove('rlog.txt')
 UPSTREAM_REPO="https://github.com/MAHESH-KADALI/testout4gb"
-UPSTREAM_BRANCH="dwebdl"
+UPSTREAM_BRANCH="swebdl"
 if UPSTREAM_REPO is not None:
     if ospath.exists('.git'):
         srun(["rm", "-rf", ".git"])
