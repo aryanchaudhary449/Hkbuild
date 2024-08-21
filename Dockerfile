@@ -1,6 +1,6 @@
 FROM python:3.9
 
-RUN apt update -y && apt install git -y && apt install wget -y && apt install ffmpeg -y
+RUN apt -qq update && apt -qq install -y git wget ffmpeg
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 RUN git clone https://github.com/mahesh-kadali/testout4gb
