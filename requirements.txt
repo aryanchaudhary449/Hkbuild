@@ -1,6 +1,7 @@
 pyrogram
 tgcrypto
 requests
+ffprobe
 hachoir
 pytz
 hachoir
