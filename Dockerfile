@@ -1,4 +1,4 @@
-FROM admin44449999/area:latest
+FROM aryanchaudhary449/test:latest
 WORKDIR /usr/src/app
 RUN chmod 777 /usr/src/app
 
